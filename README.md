@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # SentimentAnalysisDarijaNZ
 =======
 # Mabibliotheque
@@ -110,5 +110,3 @@ Ce projet est sous licence MIT. Veuillez consulter le fichier `LICENSE` pour plu
 - **Zaynab RAOUNAK**  
    - Elève-Ingénieur à l'Ecole Centrale Casablanca
 
-
->>>>>>> master
