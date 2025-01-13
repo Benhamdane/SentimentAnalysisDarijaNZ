@@ -1,0 +1,131 @@
+Metadata-Version: 2.2
+Name: SentimentAnalysisDarijaNZ
+Version: 0.3.0
+Summary: C'est une bibliothèque Python modulaire qui fournit des outils pour le calcul de similarité, le filtrage de données, et l'analyse de sentiments.
+Home-page: https://github.com/Benhamdane/SentimentAnalysisDarijaNZ
+Author: Nawfal BENHAMDANE
+Author-email: benhamdane2003@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Mabibliotheque
+
+**Mabibliotheque** est une bibliothÃ¨que Python modulaire qui fournit des outils pour le calcul de similaritÃ©, le filtrage de donnÃ©es, et l'analyse de sentiments. Elle est conÃ§ue pour traiter des textes en langue Darija (ou d'autres langues) en utilisant des techniques avancÃ©es de traitement de texte.
+
+## FonctionnalitÃ©s
+
+- **Module `similarity`** :
+  - Calcul de la similaritÃ© entre deux mots Ã  l'aide de diffÃ©rentes mÃ©thodes (Levenshtein, sÃ©quence, phonÃ©tique).
+  
+- **Module `filtering`** :
+  - Filtrage des textes en fonction de mots-clÃ©s et de seuils de similaritÃ©.
+  - Filtrage basÃ© sur des marques ou des caractÃ©ristiques spÃ©cifiques.
+
+- **Module `sentiment`** :
+  - Analyse des sentiments positifs, nÃ©gatifs et neutres dans des phrases.
+  - Gestion des intensificateurs et des mots de nÃ©gation.
+
+- **Module `utils`** :
+  - Chargement de fichiers CSV et extraction des colonnes.
+
+## Installation
+
+Pour installer cette bibliothÃ¨que, vous devez d'abord la tÃ©lÃ©charger ou la cloner depuis son dÃ©pÃ´t GitHub. Ensuite, vous pouvez l'installer en mode dÃ©veloppement ou la rendre accessible via `pip`.
+
+1. Clonez le dÃ©pÃ´t :
+   ```bash
+   git clone https://github.com/Benhamdane/SentimentAnalysisDarijaNZ.git
+   cd mabibliotheque
+   ```
+
+2. Installez les dÃ©pendances nÃ©cessaires :
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Utilisation
+
+Voici des exemples d'utilisation des modules principaux :
+
+### 1. Calcul de similaritÃ©
+```python
+from mabibliotheque.similarity import levenshtein_similarity, sequence_similarity
+
+word1 = "hello"
+word2 = "helo"
+similarity = levenshtein_similarity(word1, word2)
+print(f"Levenshtein Similarity: {similarity}")
+```
+
+### 2. Filtrage de donnÃ©es
+```python
+from mabibliotheque.filtering import find_similar_brands
+
+text = "This is a test sentence for brand filtering."
+brands = ["brand1", "test", "filter"]
+matches = find_similar_brands(text, brands)
+print(matches)
+```
+
+### 3. Analyse de sentiments
+```python
+from mabibliotheque.sentiment import sentiment_analysis8
+
+sentences = ["Cette phrase est super !", "Je n'aime pas Ã§a."]
+positive, negative, neutral = sentiment_analysis8(sentences, bigdatapositif, bigdatanegatif)
+print(f"Positifs: {positive}, NÃ©gatifs: {negative}, Neutres: {neutral}")
+```
+
+### 4. Utilitaires
+```python
+from mabibliotheque.utils import csv_to_list
+
+data = csv_to_list("path/to/your/file.csv")
+print(data)
+```
+
+## Tests
+
+Vous pouvez exÃ©cuter les tests unitaires pour vÃ©rifier que tout fonctionne correctement :
+```bash
+pytest tests/
+```
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Suivez ces Ã©tapes pour contribuer :
+
+1. Forkez le dÃ©pÃ´t.
+2. CrÃ©ez une branche pour votre fonctionnalitÃ© ou correction de bug :
+   ```bash
+   git checkout -b feature/nom-fonctionnalite
+   ```
+3. Faites vos modifications et commitez-les :
+   ```bash
+   git commit -m "Description de votre changement"
+   ```
+4. Poussez vos changements et soumettez une Pull Request.
+
+## Licence
+
+Ce projet est sous licence MIT. Veuillez consulter le fichier `LICENSE` pour plus d'informations.
+
+## Auteur
+  **Nawfal BENHAMDANE**  
+  - ElÃ¨ve-IngÃ©nieur Ã  l'Ecole Centrale Casablanca
+  
+- **Zaynab RAOUNAK**  
+   - ElÃ¨ve-IngÃ©nieur Ã  l'Ecole Centrale Casablanca
+
+
